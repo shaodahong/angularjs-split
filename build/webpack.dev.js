@@ -11,8 +11,8 @@ var baseConfig = require('./webpack.base');
 
 baseConfig = merge(baseConfig, {
     plugins: [
-        new Webpack.HotModuleReplacementPlugin()
-        // new Webpack.NamedModulesPlugin()
+        new Webpack.HotModuleReplacementPlugin(),
+        new Webpack.NamedModulesPlugin()
     ],
     devServer: {
         historyApiFallback: {

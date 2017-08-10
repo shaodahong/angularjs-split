@@ -1,0 +1,9 @@
+<div>
+    <h1>主页</h1>
+
+    <ul>
+        <li ng-repeat="nav in navs" ng-click="go(nav)">{{nav.name}}</li>
+    </ul>
+
+    <div ui-view></div>
+</div>

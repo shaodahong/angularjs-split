@@ -20,9 +20,9 @@ rm('-rf', 'dist/');
 baseConfig = merge(baseConfig, {
     devtool: 'source-map',
     plugins: [
-        new Webpack.optimize.UglifyJsPlugin({
-            sourceMap: true
-        }),
+        // new Webpack.optimize.UglifyJsPlugin({
+        //     sourceMap: true
+        // }),
         new Webpack.HashedModuleIdsPlugin()
     ]
 })
